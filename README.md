@@ -1,6 +1,4 @@
-README.md
 
-AI Workplace Productivity Assistant
 
 Project Overview
 
@@ -10,42 +8,41 @@ The application automates common workplace tasks such as writing professional em
 
 All generated responses are designed to be AI-generated and context-aware rather than generic or pre-written responses.
 
-Features Implemented
+Features Implemented:
 
-✉️ Smart Email Generator
+✉️ SMART EMAIL GENERATOR:
 
-Generate professional emails using AI.
+•Generate professional emails using AI.
 
-Supports multiple writing tones:
-
-Formal
-
-Friendly
-
+•Supports multiple writing tones:
+Formal,
+Friendly,
 Persuasive
 
-
-Generates email content based on the user's instructions and context.
-
-
-📅 AI Task Planner
-
-Generate daily and weekly schedules.
-
-Organise tasks according to priorities.
-
-Helps users structure their workload efficiently.
-
-Provides AI-generated planning suggestions.
+•Generates email content based on the user's instructions and context.
 
 
-🔗 Website & URL Analysis
 
-Users can paste a URL from a website or online platform.
 
-AI analyses the available content.
+📅 AI TASK PLANNER:
 
-Generates:
+•Generate daily and weekly schedules.
+
+•Organise tasks according to priorities.
+
+•Helps users structure their workload efficiently.
+
+•Provides AI-generated planning suggestions.
+
+
+
+🔗 WEBSITE & URL ANALYSIS:
+
+•Users can paste a URL from a website or online platform.
+
+•AI analyses the available content.
+
+•Generates:
 
 Summaries
 
@@ -54,47 +51,50 @@ Key insights
 Recommendations
 
 
-Responses are generated dynamically based on the provided content.
+•Responses are generated dynamically based on the provided content.
 
 
-🤖 AI Chatbot
+🤖 AI CHATBOT:
 
-Interactive AI-powered workplace assistant.
+•Interactive AI-powered workplace assistant.
 
-Answers user questions using AI.
+•Answers user questions using AI.
 
-Provides contextual responses rather than fixed generic answers.
-
-
-📱 Responsive Design
-
-Modern and professional user interface.
-
-Works across desktop, tablet, and mobile devices.
-
-Simple navigation and user-friendly layouts.
+•Provides contextual responses rather than fixed generic answers.
 
 
-Technologies and Tools Used
+📱 RESPONSIVE DESIGN:
 
-Frontend: HTML5, CSS3, JavaScript / TypeScript
+•Modern and professional user interface.
 
-Framework: React
+•Works across desktop, tablet, and mobile devices.
 
-Styling: Modern responsive CSS
-
-AI: Large Language Model (LLM) / AI API
-
-Development Platform: Lovable
-
-Version Control: Git & GitHub
-
-API Communication: REST APIs / Fetch
-
-Markdown: README documentation
+•Simple navigation and user-friendly layouts.
 
 
-Setup Instructions
+TECHNOLOGIES AND TOOLS USED:
+
+1.Frontend: HTML5, CSS3, JavaScript /TypeScript
+
+2.Framework: React
+
+3.Styling: Modern responsive CSS
+
+4.AI: Large Language Model (LLM) / AI API
+
+5.Development Platform: Lovable
+
+6.Version Control: Git & GitHub
+
+7.API Communication: REST APIs / Fetch
+
+8.Markdown: README documentation
+
+9.lovable:Application development and prototyping 
+
+10.GitHub:Source code management and Version Control 
+
+SETUP INSTRUCTIONS:
 
 1. Clone the Repository
 
@@ -129,7 +129,7 @@ npm run build
 
 npm run preview
 
-Usage
+USAGE:
 
 1. Open the application.
 
