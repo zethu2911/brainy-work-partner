@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as EmailRouteImport } from './routes/email'
+import { Route as PlannerRouteImport } from './routes/planner'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,40 @@ const EmailRoute = EmailRouteImport.update({
   path: '/email',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PlannerRoute = PlannerRouteImport.update({
+  id: '/planner',
+  path: '/planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/email': typeof EmailRoute
+  '/planner': typeof PlannerRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/email': typeof EmailRoute
+  '/planner': typeof PlannerRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/email': typeof EmailRoute
+  '/planner': typeof PlannerRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/email'
+  fullPaths: '/' | '/email' | '/planner'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/email'
-  id: '__root__' | '/' | '/email'
+  to: '/' | '/email' | '/planner'
+  id: '__root__' | '/' | '/email' | '/planner'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   EmailRoute: typeof EmailRoute
+  PlannerRoute: typeof PlannerRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +75,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EmailRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/planner': {
+      id: '/planner'
+      path: '/planner'
+      fullPath: '/planner'
+      preLoaderRoute: typeof PlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   EmailRoute: EmailRoute,
+  PlannerRoute: PlannerRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
