@@ -1,230 +1,155 @@
-# Smart Email Generator 
+README.md
 
-Build a modern, responsive frontend-only SaaS web app called AI Workplace Productivity Assistant for professionals.
+AI Workplace Productivity Assistant
 
+Project Overview
 
+AI Workplace Productivity Assistant is a modern, responsive web application designed to help professionals improve workplace productivity using AI-generated assistance.
 
-Design: Deep blue + light gray, clean professional SaaS dashboard, responsive desktop/mobile layout, sidebar navigation, cards, modern typography, and intuitive controls.
+The application automates common workplace tasks such as writing professional emails, planning daily or weekly activities, prioritising tasks, and analysing information from website URLs.
 
+All generated responses are designed to be AI-generated and context-aware rather than generic or pre-written responses.
 
+Features Implemented
 
-Core AI Features
+✉️ Smart Email Generator
 
+Generate professional emails using AI.
 
+Supports multiple writing tones:
 
-1. Smart Email Generator
+Formal
 
+Friendly
 
+Persuasive
 
-User enters recipient, purpose, context, and key points.
 
+Generates email content based on the user's instructions and context.
 
 
-Select tone: Formal, Friendly, or Persuasive.
+📅 AI Task Planner
 
+Generate daily and weekly schedules.
 
+Organise tasks according to priorities.
 
-Generate a unique AI-written professional email based on the user's input.
+Helps users structure their workload efficiently.
 
+Provides AI-generated planning suggestions.
 
 
-Results must NOT be generic or hardcoded.
+🔗 Website & URL Analysis
 
+Users can paste a URL from a website or online platform.
 
+AI analyses the available content.
 
-Allow editing, copying, regenerating, and clearing.
+Generates:
 
+Summaries
 
+Key insights
 
+Recommendations
 
 
-2. AI Task Planner
+Responses are generated dynamically based on the provided content.
 
 
+🤖 AI Chatbot
 
-User enters their actual tasks, deadlines, priorities, and available time.
+Interactive AI-powered workplace assistant.
 
+Answers user questions using AI.
 
+Provides contextual responses rather than fixed generic answers.
 
-Choose Daily or Weekly plan.
 
+📱 Responsive Design
 
+Modern and professional user interface.
 
-AI analyzes the provided information and generates a personalized schedule and task priorities.
+Works across desktop, tablet, and mobile devices.
 
+Simple navigation and user-friendly layouts.
 
 
-Results must be dynamically AI-generated from the user's inputs, not predefined examples.
+Technologies and Tools Used
 
+Frontend: HTML5, CSS3, JavaScript / TypeScript
 
+Framework: React
 
-Allow users to edit and regenerate the plan.
+Styling: Modern responsive CSS
 
+AI: Large Language Model (LLM) / AI API
 
+Development Platform: Lovable
 
+Version Control: Git & GitHub
 
+API Communication: REST APIs / Fetch
 
-3. AI URL Summarizer
+Markdown: README documentation
 
 
+Setup Instructions
 
-User pastes a website/article URL.
+1. Clone the Repository
 
+git clone <repository-url>
+cd ai-workplace-productivity-assistant
 
+2. Install Dependencies
 
-AI should analyze the provided URL and generate:
+npm install
 
+3. Configure Environment Variables
 
+Create a .env file in the root directory:
 
-Summary
+AI_API_KEY=your_api_key_here
 
+Replace your_api_key_here with the API key for the AI service being used.
 
+Do not commit your .env file or API keys to GitHub.
 
-Key Insights
+4. Start the Development Server
 
-
-
-Actionable Recommendations
-
-
-
-
-
-Results must be based on the actual URL content, not generic placeholder text.
-
-
-
-Include loading and error states.
-
-
-
-
-
-4. AI Workplace Chatbot
-
-
-
-Interactive AI chat interface.
-
-
-
-Every response must be AI-generated based on the user's message and conversation context.
-
-
-
-No hardcoded chatbot responses.
-
-
-
-Include suggested workplace prompts as optional starting points.
-
-
-
-
-
-Dashboard
-
-
-
-Create a simple dashboard with:
-
-
-
-Welcome section
-
-
-
-Quick access to the four AI tools
-
-
-
-Recent activity UI only if it can be handled without storing data
-
-
-
-No fake productivity statistics or generic AI results.
-
-
-
-
-
-Important Technical Requirements
-
-
-
-Frontend only.
-
-
-
-No backend, database, authentication, or permanent data storage.
-
-
-
-Do not store user prompts, URLs, emails, schedules, or conversations.
-
-
-
-Connect the AI features to an appropriate AI API/client-side integration if supported by Lovable.
-
-
-
-Do not use mock, hardcoded, placeholder, or generic AI responses for the main features.
-
-
-
-If an AI/API connection is unavailable, clearly show an error/setup message rather than pretending the response was AI-generated.
-
-
-
-AI outputs must be editable.
-
-
-
-Keep the application lightweight because I have only 5 Lovable credits.
-
-
-
-Build only the essential features and avoid unnecessary pages/components.
-
-
-
-
-
-Responsible AI Disclaimer
-
-
-
-Display:
-
-
-
-> AI-generated content may contain errors. Review and verify important information before using it for workplace decisions or communications.
-
-
-
-
-
-
-
-Priority: Make the four core tools genuinely AI-powered, personalized to user input, simple to use, and visually polished.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/ee0e73af-479c-43e6-8131-6adbf2a7338a).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
 npm run dev
-```
+
+The application should then be available at the local development URL displayed in the terminal.
+
+5. Build for Production
+
+npm run build
+
+6. Preview the Production Build
+
+npm run preview
+
+Usage
+
+1. Open the application.
+
+
+2. Select the workplace productivity feature you want to use.
+
+
+3. Enter your instructions or task details.
+
+
+4. Provide a URL when using the website-analysis feature.
+
+
+5. Submit your request.
+
+
+6. The AI generates a response based on the provided information.
+
+
+
+Author
+
+Zethu Simelane
